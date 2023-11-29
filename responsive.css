@@ -1,0 +1,120 @@
+*, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 115px;
+  background-color: #02101d;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  padding: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+}
+
+.logo-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo {
+  width: 180px;
+  padding-left: 20px;
+}
+
+.nav {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-btns {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fff;
+  font-size: 20px;
+}
+
+.logIn {
+  padding: 10px;
+  border: 2px solid #ce0ed9;
+  border-radius: 10px;
+}
+
+.register {
+  padding: 10px;
+  border: 1px solid #610ed9;
+  border-radius: 10px;
+}
+
+.logIn:hover {
+  background-image: linear-gradient(60deg, #cc0fd9, #0cd1da);
+  cursor: pointer;
+}
+
+.register:hover {
+  background-image: linear-gradient(60deg, #cc0fd9, #0cd1da);
+  cursor: pointer;
+}
+
+.checkbtn {
+  width: 35px;
+  display: none;
+  font-size: 40px;
+  color: #fff;
+}
+
+#check {
+  display: none;
+}
+
+section {
+  padding-top: 115px;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+@media (max-width: 896px) {
+  .nav-btns {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 200%;
+    top: 100px;
+    width: 160px;
+    height: 40%;
+    transition: .5s ease-in-out;
+  }
+
+  .checkbtn {
+    display: flex;
+    position: absolute;
+    right: 60px;
+  }
+}
